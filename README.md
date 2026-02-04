@@ -9,6 +9,22 @@ npm init -y --init-type=module
 npx eslint yourfile.js 
 ```
 
+# Prettier
+```bash
+# to install
+npm install --save-dev --save-exact prettier
+
+# create an empty config file to let editors and other tools know you are using Prettier:
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+
+# create a .prettierignore file to let the Prettier CLI and editors know which files to not format. Here’s an example:
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+
+# to format all files
+npx prettier . --write
+```
+
+
 
 
 
