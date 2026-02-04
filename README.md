@@ -1,7 +1,27 @@
 # Repository-template
 
-# Steps to setup Webpack
+# ESLint
+```bash
+# to install
+npm init -y --init-type=module
 
+# to run
+npx eslint yourfile.js 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Steps to setup Webpack
 
 #### 1. Creates a package.json file in it for npm to record information about packages we use
 
