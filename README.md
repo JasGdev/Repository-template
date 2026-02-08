@@ -21,6 +21,30 @@ npm test
 }
 ```
 
+# Jest with ESLint
+```bash
+
+# add to eslint.config.js
+import {defineConfig} from 'eslint/config';
+import globals from 'globals';
+
+export default defineConfig([
+  {
+    files: ['**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+    rules: {
+      'no-unused-vars': 'warn',
+      'no-undef': 'warn',
+    },
+  },
+]);
+
+```
+
 
 
 # ESLint
