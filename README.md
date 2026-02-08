@@ -1,5 +1,28 @@
 # Repository-template
 
+# Jest
+```bash
+# to install
+npm install --save-dev jest
+
+# test format 
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+
+# to run test
+npm test
+
+# add to package.json
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+
+
 # ESLint
 ```bash
 # to install
