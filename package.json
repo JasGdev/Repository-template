@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JasGdev/Repository-template#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.29.0",
     "@eslint/css": "^0.14.1",
     "@eslint/js": "^9.39.2",
     "@eslint/json": "^1.0.0",

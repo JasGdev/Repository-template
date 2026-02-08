@@ -1,5 +1,18 @@
 # Repository-template
 
+# Using ES6 import statements with Jest
+```bash
+# to install
+
+npm install --save-dev @babel/preset-env
+
+# Create a babel.config.js in the project root with the following contents:
+
+export default {
+  presets: [["@babel/preset-env", { targets: { node: "current" } }]],
+};
+```
+
 # Jest
 ```bash
 # to install
