@@ -1,5 +1,24 @@
 # Repository-template
 
+# Add script for nodemon for restarting js file
+```bash
+#did both 
+
+#global install
+npm i -g nodemon
+
+#development dependency
+npm i --save-dev nodemon
+
+#Scripts
+"test": "jest",
+"webserve": "webpack serve",
+"watch": "jest --watch",
+"auto" : "nodemon"
+
+```
+
+
 # Using ES6 import statements with Jest
 ```bash
 # to install

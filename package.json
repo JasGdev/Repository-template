@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "webserve": "webpack serve",
-    "watch": "jest --watch *.js"
+    "watch": "jest --watch",
+    "auto": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
     "jest": "^30.2.0",
+    "nodemon": "^3.1.11",
     "prettier": "3.8.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
