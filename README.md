@@ -1,5 +1,65 @@
 # Repository-template
 
+# Using ES6 import statements with Jest
+```bash
+# to install
+
+npm install --save-dev @babel/preset-env
+
+# Create a babel.config.js in the project root with the following contents:
+
+export default {
+  presets: [["@babel/preset-env", { targets: { node: "current" } }]],
+};
+```
+
+# Jest
+```bash
+# to install
+npm install --save-dev jest
+
+# test format 
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+
+# to run test
+npm test
+
+# add to package.json
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+# Jest with ESLint
+```bash
+
+# add to eslint.config.js
+import {defineConfig} from 'eslint/config';
+import globals from 'globals';
+
+export default defineConfig([
+  {
+    files: ['**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+    rules: {
+      'no-unused-vars': 'warn',
+      'no-undef': 'warn',
+    },
+  },
+]);
+
+```
+
+
+
 # ESLint
 ```bash
 # to install

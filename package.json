@@ -4,7 +4,9 @@
   "description": "```bash npm init -y --init-type=module ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "webserve": "webpack serve",
+    "watch": "jest --watch *.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/JasGdev/Repository-template#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.29.0",
     "@eslint/css": "^0.14.1",
     "@eslint/js": "^9.39.2",
     "@eslint/json": "^1.0.0",
@@ -28,6 +31,7 @@
     "globals": "^17.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
+    "jest": "^30.2.0",
     "prettier": "3.8.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
