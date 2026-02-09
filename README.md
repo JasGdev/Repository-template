@@ -135,7 +135,6 @@ npx webpack
 
 # Steps to setup Loading CSS
 
-
 #### 1. install style-loader and css-loader
 
 ```bash
